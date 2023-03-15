@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+ 
+:root{
+--White: hsl(0, 0%, 100%);
+--Light-gray: hsl(212, 45%, 89%);
+ --Grayish-blue: hsl(220, 15%, 55%);
+--Dark-blue: hsl(218, 44%, 22%); 
+}    
+
+img{
+    max-width: 100%;
+}
+body{
+    font-family: "outfit",sans-serif;
+    font-size: 15px;  
+    background-color: var(--Light-gray);
+    display: flex; /*Avec display: flex sans flex-direction le texte : 'challenge..' partirait  en haut*/
+    flex-direction: column;
+    align-items: center; /*Avec align-items le cadre ou l'element est mis au milieu du body*/
+    justify-content: center; /* Comme dans word justifier rassemble ou ici pousse vers le bas le cadre*/ 
+    height: calc(100vh - 1px); /*On a fixé une hauteur et donc le cadresera poussé au centre de la hauteur fixé si on mettait 50vh ça partirait en haut*/
+    margin: 2rem;
+}
+.container{
+    background-color: var(--White);
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    box-shadow: 5px 5px 5px rgba(0, 0,0,0.15 ) ;
+    margin-bottom: 1.5rem;
+}
+.container img{
+    border-radius: 0.625rem;
+    margin-bottom: 1rem;
+}
+.container h1{
+     color: var(--Dark-blue);
+     text-align: center;
+     margin-bottom: 1rem;
+}
+.container p{
+    color : var(--Grayish-blue)
+    text-align: center;
+}
+.attribution {
+     font-size: 14px;
+      text-align: center; }
+.attribution a { 
+        color: hsl(228, 45%, 44%);
+     }
+@media(min-width: 500px){
+.container{
+    width: 400px;
+
+}
+}

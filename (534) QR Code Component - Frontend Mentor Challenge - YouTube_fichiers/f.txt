@@ -1,0 +1,1 @@
+google.sbox.p50 && google.sbox.p50(["first challenge frontend mentor",[],{"j":"3w","k":1,"q":"nrSK6kQvQVEZFrPfjS7mhwwzt-Q"}])
